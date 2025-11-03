@@ -101,6 +101,10 @@ This workflow checks for the latest Docker image of n8n, notifies you via email 
 * **30 seconds later**: Workflow runs update script → n8n restarts with latest Docker image.
 * **Day 4**: Workflow checks again → digests match → silently completes (no email sent).
 
+## PREVIEW
+
+![Preview Image](preview.png)
+
 ---
 
 **Author:** Muhammad Anas Farooq
