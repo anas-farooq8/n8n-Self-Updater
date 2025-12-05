@@ -1,8 +1,10 @@
 # n8n Self-Updater Workflow
 
-An automated **n8n workflow** originally built for **DigitalOcean-based n8n deployments**, but fully compatible with **any VPS or cloud hosting** (e.g., AWS, Google Cloud, Hetzner, Linode, etc.) where n8n runs via Docker.
+> An automated **n8n workflow** originally built for **DigitalOcean-based n8n deployments**, but fully compatible with **any VPS or cloud hosting** (e.g., AWS, Google Cloud, Hetzner, Linode, etc.) where n8n runs via Docker.
 
 This workflow checks for the latest Docker image of n8n, notifies you via email for approval, and securely updates your n8n instance via SSH once approved.
+
+![Preview Image](preview.png)
 
 ---
 
@@ -100,10 +102,6 @@ This workflow checks for the latest Docker image of n8n, notifies you via email 
 * **Day 1**: Workflow checks → detects update → sends email → user approves.
 * **30 seconds later**: Workflow runs update script → n8n restarts with latest Docker image.
 * **Day 4**: Workflow checks again → digests match → silently completes (no email sent).
-
-## PREVIEW
-
-![Preview Image](preview.png)
 
 ---
 
